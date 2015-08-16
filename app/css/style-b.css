@@ -3,8 +3,9 @@ Github/FPO-site/app/css/style-b.css
 */
 
 
-.navbar-inverse{
+.topBar {
 	background:#312f2f;
+	margin-bottom: 0px;
 }
 .c-icon {
 	padding-right: 10px;
@@ -13,3 +14,23 @@ Github/FPO-site/app/css/style-b.css
 	padding-right: 13px;
 }
 
+.logoBar {
+	background: #000;
+
+}
+
+
+.header-black {
+	margin-top: 21px;
+	margin-bottom: 0px;
+}
+
+
+.splash {
+	width: 100%;
+	margin-top: -20px;
+}
+
+.custom-pos {
+
+}
