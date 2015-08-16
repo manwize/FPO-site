@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html>
 	<head>
 		<title>FPO Site</title>
-
-		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style-b.css">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="social-share-kit-1.0.6/dist/css/social-share-kit.css">
+		<link rel="stylesheet" type="text/css" href="css/style-b.css">
+
+		
 	</head>
 	<body>
 
-		<div class="navbar navbar-inverse topBar" role="navigation">
+		<div class="navbar navbar-inverse topBar">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -19,7 +22,7 @@
 				</button>
 			</div>		
 			<div class="collapse navbar-collapse"> 
-				<form class="navbar-form navbar-right" role="search"> 
+				<form class="navbar-form navbar-right"> 
 					<ul class="nav navbar-nav">
 					  <li><a href="#"><img class="c-icon" src="img/contact-icon.png" alt="contact-icon.png"> Contact Us</a></li>
 					  <li><a href="#"><img class="c-icon online" src="img/bill-pay-icon.png" alt="bill-pay-icon.png">Online Bill Pay</a></li>
@@ -34,74 +37,75 @@
 			</div>
 		</div>
 
-		<nav class="navbar navbar-inverse logoBar" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            
-                
-                <!--<a class="navbar-brand" href="#"></a>-->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img class="logo" src="img/logo-2.png" alt="logo.png">
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">WHAT WE DO</a></li>           
-	                <li><a href="#">WHO WE SERVE</a></li>             
-	                <li><a href="#">CASE STUDIES</a></li>            
-	                <li><a href="#" class="active">WHAT'S NEW</a></li>             
-	                <li><a href="#">CAREERS</a></li>            
-	                <li><a href="#">ABOUT TE</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+		<nav class="navbar navbar-inverse logoBar">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <img class="logo" src="img/logo-2.png" alt="logo.png">
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav infoLinks">
+	                    <li><a href="#">WHAT WE DO</a></li>           
+		                <li><a href="#">WHO WE SERVE</a></li>             
+		                <li><a href="#">CASE STUDIES</a></li>            
+		                <li class="active"><a href="#" style="color: #fdb71c;">WHAT'S NEW</a></li>             
+		                <li><a href="#">CAREERS</a></li>            
+		                <li><a href="#">ABOUT TE</a></li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
+		<img class="splash" src="img/FPO-Splash.png" alt="FPO-Splash.png">
+		
 
-    </nav>
-	<img class="splash" src="img/FPO-Splash.png" alt="placeholder+image">
-<!--
-		<div class="navbar navbar-inverse logoBar" role="navigation">
-			
-			<img class="logo" src="img/logo.png" alt="logo.png">
-			<ul class="nav navbar-nav navbar-right" id="headNav2">
-				<li><a href="#">WHAT WE DO</a></li>           
-                <li><a href="#">WHO WE SERVE</a></li>             
-                <li><a href="#">CASE STUDIES</a></li>            
-                <li><a href="#" class="active">WHAT'S NEW</a></li>             
-                <li><a href="#">CAREERS</a></li>            
-                <li><a href="#">ABOUT TE</a></li>
-            </ul>
-		</div>
--->
+		<div class="col-sm-3" id="social-bar">
+		    <nav class="navbar navbar-default" role="navigation">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		        </div>
+
+		        <div class="collapse navbar-collapse">
+		            <ul class="nav nav-stacked social">
+		                <li><a href="#" class="active">What's New</a></li>
+		                <li><a href="#">Blog</a></li>
+		                <li><a href="#">News</a></li>
+		                <li><a href="#">Events</a></li>              
+		            </ul>
+		            <div class="panel-heading">Share This Page
+						<hr/>
+					</div>
+					<div class="ssk-group">
+					    <a href="#" class="ssk ssk-facebook"></a>
+					    <a href="#" class="ssk ssk-twitter"></a>
+					    <a href="#" class="ssk ssk-linkedin"></a>
+					    <a href="#" class="ssk ssk-google-plus"></a>
+					    <a href="#" class="ssk ssk-email"></a>
+					</div>
+		        </div><!-- /.navbar-collapse -->
+		    </nav>
+		</div><!--/end left column-->
+
 
 
 
   
-</div><!-- /.container -->
-	    <!--
-	    <div class="container side-collapse-container">
-	      <div class="row">
-	        <h1>Hello</h1>
-	        <p>This is a side opening nav demonstration</p>
-	        <p>Make your browser smaller and the top menu wil become into a lateral slider menu</p>
-	      </div>
-	    </div>
-	    -->
-
-	
-
-
 
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
-		<script type="text/javascript" src=""></script>
+		<!--<script type="text/javascript" src="script/main2.js"></script>-->
 
 	</body>
 </html>

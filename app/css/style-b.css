@@ -16,21 +16,31 @@ Github/FPO-site/app/css/style-b.css
 
 .logoBar {
 	background: #000;
-
 }
-
 
 .header-black {
 	margin-top: 21px;
 	margin-bottom: 0px;
 }
+.infoLinks {
+	margin-top: 70px;
+	margin-left: 90px;
+}
 
+.active, a:hover {
+    color: #fdb71c;
+}
 
 .splash {
 	width: 100%;
 	margin-top: -20px;
 }
 
-.custom-pos {
-
+.social, .panel-heading  {
+	color: #000000;
+	margin-left: 30px;
 }
+#social-bar {
+	width: 250px;
+}
+
