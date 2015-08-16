@@ -1,0 +1,68 @@
+/*style-b.css*/
+
+
+
+.BG-black {
+	background-color:#000;
+	margin-top: -11px;
+}
+
+.searchBox {
+	width: 200px;
+}
+
+.leveled {
+	margin-top: -90px;
+	font-size: 11px;
+}
+
+.logo {
+	margin-top: 30px;
+}
+
+.splash {
+	width: 100%;
+	margin-top: -20px;
+	border: none;
+}
+
+.downP {
+	position: relative;
+	top: 42px;
+	left: -130px;
+}
+
+.orng {
+	color: #ff7a16
+}
+
+.selected {
+	font-weight: bold;
+}
+
+.resetFont {
+	color: #000;
+}
+
+#navbar2 {
+	margin-top: 84px;
+}
+
+.filter-by {
+	margin-left: 60px;
+}
+/*
+.select-drop1 {
+	margin-top: 87px;
+	margin-left: 140px;
+}
+
+.select-drop2 {
+	margin-left: 350px;
+	margin-top: -34px;
+}
+
+.select-drop3 {
+	margin-left: 449px;
+	margin-top: -34px;
+}*/
