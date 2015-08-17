@@ -31,6 +31,11 @@ Github/FPO-site/app/css/style-b.css
     color: #fdb71c;
 }
 
+.active-2, .title {
+	color:#000000;
+	font-weight: bold;
+}
+
 .splash {
 	width: 100%;
 	margin-top: -20px;
@@ -38,6 +43,11 @@ Github/FPO-site/app/css/style-b.css
 
 #contentBlock-1 {
 	margin-top: 80px;
+	margin-bottom: 300px;
+}
+
+.linkReg{
+	color: #000000;
 }
 
 .social, .panel-heading {
@@ -56,8 +66,11 @@ Github/FPO-site/app/css/style-b.css
 	padding-bottom: 25px;
 }
 
+.navbar-default {
+	background: #ebebeb;
+}
+
 .selectBoxes {
-	/*padding-left: 5px;*/
 	margin-left: 25px;
 }
 
@@ -68,4 +81,54 @@ Github/FPO-site/app/css/style-b.css
 .article-pic {
 	width: 174px;
 	height: 116px;
+	padding-right: 0px;
 }
+
+#grid-1{
+	margin-top: 0px;
+}
+
+#grid-1, #grid-2, #grid-3, #grid-4 {
+	margin-bottom: 50px;
+
+}
+
+
+@media (min-width: 1000px) {
+	.line-grids {
+		max-width: 4082px;
+		margin-left:55px;
+		margin-top: -200px;
+	}
+	.selectBoxes {
+		margin-top: -50px;
+	}
+	.text-P {
+		margin-top: 210px;
+	}
+	.left-nav-title {
+		visibility: hidden;
+		margin-left: 28px;
+	}
+}
+
+
+@media (min-width: 398px) {
+	.line-grids {
+		max-width: 750px;
+		float: left;
+		margin-top: 40px;
+	}
+	.selectBoxes {
+		margin-top: 0px;
+	}
+	.text-P {
+		margin-top: 10px;
+	}
+	.left-nav-title {
+		visibility: visible;
+	}
+
+}
+
+
