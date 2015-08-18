@@ -7,11 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="social-share-kit-1.0.6/dist/css/social-share-kit.css">
 		<link rel="stylesheet" type="text/css" href="css/style-b.css">
-
-		
 	</head>
 	<body>
-
 		<div class="navbar navbar-inverse topBar">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,7 +33,6 @@
 				</form>
 			</div>
 		</div>
-
 		<nav class="navbar navbar-inverse logoBar">
 	        <div class="container">
 	            <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,7 +44,7 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	                <img class="logo" src="img/logo-2.png" alt="logo.png">
-	            </div>
+	            </div> <!-- /.navbar-header -->
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 	                <ul class="nav navbar-nav infoLinks">
@@ -58,12 +54,10 @@
 		                <li class="active"><a href="#" style="color: #fdb71c;">WHAT'S NEW</a></li>             
 		                <li><a href="#">CAREERS</a></li>            
 		                <li><a href="#">ABOUT TE</a></li>
-	                </ul>
-	            </div>
-	            <!-- /.navbar-collapse -->
-	        </div>
-	        <!-- /.container -->
-	    </nav>
+	                </ul> <!-- /.nav navbar-nav infoLinks -->
+	            </div> <!-- /.navbar-collapse -->     
+	        </div> <!-- /.container -->
+	    </nav> <!-- /.navbar navbar-inverse  logoBar  -->
 		<img class="splash" src="img/FPO-Splash.png" alt="FPO-Splash.png">
 		
 		<div class="content container-fluid" id="contentBlock-1">
@@ -78,11 +72,12 @@
 			        </div>
 
 			        <div class="collapse navbar-collapse">
+			        	<h3 class="left-nav-title">Quick Links</h3>
 			            <ul class="nav nav-stacked social">
-			                <li><a href="#" class="active">What's New</a></li>
-			                <li><a href="#">Blog</a></li>
-			                <li><a href="#">News</a></li>
-			                <li><a href="#">Events</a></li>              
+			                <li><a href="#" class="active-2">What's New</a></li>
+			                <li><a href="#" class="linkReg">Blog</a></li>
+			                <li><a href="#" class="linkReg">News</a></li>
+			                <li><a href="#" class="linkReg">Events</a></li>              
 			            </ul>
 			            <div class="panel-heading">Share This Page
 						</div>
@@ -96,10 +91,9 @@
 			        </div><!-- /.navbar-collapse -->
 			    </nav>
 			</div><!--/end Social bar - left column-->
-			
 			<div id="selectBoxes" class="selectBoxes">
 				<!-- Single button -->
-				<span style="margin-left: 20px;">Sort By</span>
+				<span class="sort-label">Sort By</span>
 				<div class="btn-group" id="dropdown-1">
 				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    Type <span class="caret"></span>
@@ -139,64 +133,104 @@
 				  </ul>
 				</div>
 			</div>
+			<div class="line-grids">
 
-			<div class="content container line-grids" id="grid-1">
-			  	<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-sm-6" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-				    
-					    <article class="col-sm-6" id="text-1">
-					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					    </article>
-				    </div>
-		    	</div>
-	    	</div>
-			  
-			<div class="content container" id="grid-2">
-			  	<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-sm-6" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-				    
-					    <article class="col-sm-6" id="text-2">
-					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					    </article>
-				    </div>
-		    	</div>
-	    	</div>
+				<div class="content container-fluid" id="grid-1">
+				  	<div class="row">
+					    <div class="pull-right">
+					      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" id="pic-1" alt="lady.jpg">
 
-    		<div class="content container" id="grid-3">
-			  	<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-sm-6" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-				    
-					    <article class="col-sm-6" id="text-3">
-					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					    </article>
+						    <article class="col-sm-7 text-P" id="text-1">
+						    	<p>
+						    		<span class="title">Title: </span> 
+						    		<em>Ham hock  in ball tip occaecat et, short</em> <br/>
+						      		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						      	</p>
+						    </article>
+					    </div>
 				    </div>
-		    	</div>
-	    	</div>
+			  </div> <!-- grid-1 -->
 
-	    	<div class="content container" id="grid-4">
+			<div class="content container-fluid" id="grid-2">
+				<div class="row">
+				    <div class="pull-right">
+				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+					    <article class="col-md-6 text-P" id="text-2">
+			      			<p>
+			      				<span class="title">Title: </span>
+			      				<em> Do qui mollit beef ribs quis tail beef e</em><br/>
+			      				Quis consequat cupim jowl chicken. Ham hock occaecat sunt, bacon frankfurter pastrami beef. Sed biltong duis spare ribs pork loin meatloaf filet mignon ad ham non culpa. Pork et chuck ipsum.
+		      				</p>
+	      				</article>
+			    	</div>
+		    	</div>
+		  	</div> <!-- grid-2 -->		  
+			<div class="content container-fluid" id="grid-3">
 			  	<div class="row">
 				    <div class="pull-right">
-				      	<img class="article-pic col-sm-6" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-					    <article class="col-sm-6" id="text-4">
-					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					    </article>
-				    </div>
+				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+					    <article class="col-md-8 text-P" id="text-3">
+			      			<p>
+				      			<span class="title">Title: </span>
+				      			<em>Turducken nostrud ea do tri-tip anim. V</em>
+				      			<br/>
+				      			Pork loin nisi venison, biltong ullamco doner dolor anim shank corned beef. Tail minim eu sunt, exercitation swine reprehenderit ut quis tenderloin meatloaf elit. Occaecat t-bone ut laborum, pastrami enim do hamburger ex eiusmod incididunt turkey est. Ut turducken doner bacon tenderloin, qui aute landjaeger pastrami.
+		      				</p>
+	      				</article>
+			    	</div>
 		    	</div>
-	    	</div>
+	    	</div> <!-- grid-3 -->	  
+			<div class="content container-fluid" id="grid-4">
+			  	<div class="row">
+				    <div class="pull-right">
+				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+					    <article class="col-md-9 text-P" id="text-4">
+			      			<p><span class="title">Title:</span> <em>Incididunt exercitation deserunt pig sir</em>
+			      				<br/>Labore shank leberkas brisket, mollit ullamco in aliqua bacon pork swine ham hock consequat nostrud bresaola. Ut meatloaf culpa esse prosciutto ut shankle. Turducken cupidatat t-bone, pancetta hamburger quis ribeye tempor. Aute esse landjaeger sunt, hamburger sint drumstick ea pork filet mignon.
+		      				</p>
+	      				</article>
+			    	</div>
+		    	</div> <!-- row 4 -->
+		  	</div> <!-- grid-4 -->
+		</div> <!-- line-grids -->
+		<div class="container sign-up pull-right">
+		    <div class="row" id="sign-up-row">
+		    	<div class="col-md-4 col-md-offset-7">
+		    		<div class="panel panel-default">
+					  	<div class="panel-heading">
+					    	<h2 class="panel-title">Sign Up for Updates</h2>
+					 		<br/>
+					 		<p class="edit-text">Editable text lorem ipsum dolor sit amet, consectetaur adipisic</p>
+					 	</div>
+					  	<div class="panel-body">
+					    	<form accept-charset="UTF-8" role="form">
+		                    <fieldset>
+		                    	<div class="form-group">
+					    		    <input class="form-control" placeholder="First Name" name="fname" type="text">
+					    		</div>
+					    		<div class="form-group">
+					    		    <input class="form-control" placeholder="Last Name" name="lname" type="text">
+					    		</div>
+					    	  	<div class="form-group">
+					    		    <input class="form-control" placeholder="E-mail" name="email" type="text">
+					    		</div>
+					    		<div class="checkbox">
+					    	    	<label>
+					    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+					    	    	</label>
+					    	    </div>
+					    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Submit">
+					    	</fieldset>
+					      	</form>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer" class="footer">
 			
-
-
-
-
-		
-	   
-
-
-  
-
+		</footer>
+	
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
 		<!--<script type="text/javascript" src="script/main2.js"></script>-->

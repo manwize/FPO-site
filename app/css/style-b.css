@@ -193,7 +193,10 @@ Github/FPO-site/app/css/style-b.css
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: url();
+  background:#000000;
+  background-size: 369px;
+  overflow: hidden;
+
 }
 
 @media (min-width: 398px, max-width: 1400px) {
