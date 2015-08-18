@@ -2,6 +2,11 @@
 Github/FPO-site/app/css/style-b.css
 */
 
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
 
 .topBar {
 	background:#312f2f;
@@ -59,7 +64,7 @@ Github/FPO-site/app/css/style-b.css
 }
 #social-bar {
 	width: 250px;
-	margin-left: 60px;
+	margin-left: 40px;
 }
 
 #social-nav {
@@ -84,9 +89,6 @@ Github/FPO-site/app/css/style-b.css
 	padding-right: 0px;
 }
 
-#grid-1{
-	margin-top: 0px;
-}
 
 #grid-1, #grid-2, #grid-3, #grid-4 {
 	margin-bottom: 50px;
@@ -104,7 +106,9 @@ Github/FPO-site/app/css/style-b.css
 .edit-text {
 	margin-left: 13px;
 }
-
+.footer-L {
+	background: #000000;
+}
 
 @media (min-width: 1000px) {
 	.line-grids {
@@ -122,11 +126,37 @@ Github/FPO-site/app/css/style-b.css
 		visibility: hidden;
 		margin-left: 28px;
 	}
-	.sign-up {
 
-		margin-top: -684px;
-		margin-left: 400p
+	.sort-label { 
+		margin-left: 20px;
 	}
+
+	.panel-heading {
+		width: auto;
+	
+	}
+
+	.sign-up {	
+    	width: 900px;
+		margin-top: -537px;
+	    margin-left: 300px;
+	}
+
+	#grid-1{
+		margin-top: 0px;
+		margin-left: 15px;
+		background-color: #e1e1e1;
+		padding-bottom: 17px;
+		width: 688px;
+	}
+
+	#pic-1 {
+		margin-top: 13px;
+	}
+	#sign-up-row {
+		margin-left: 28px;
+	}
+
 }
 
 @media (min-width: 398px) {
@@ -144,7 +174,34 @@ Github/FPO-site/app/css/style-b.css
 	.left-nav-title {
 		visibility: visible;
 	}
+	.panel-heading {
+		width: auto;
+	}
+	.social-nav {
+		width: 100px;
+	}
+	.sort-label { 
+		margin-left: 0px;
+	}
+	#social-nav {
+		width: 100%;
+	}
 
 }
 
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url();
+}
+
+@media (min-width: 398px, max-width: 1400px) {
+	.sign-up {
+		max-width: 900px;
+		margin-top: 20px;
+		float: left;
+	}
+	
+}
 
