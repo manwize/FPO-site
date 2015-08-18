@@ -181,6 +181,7 @@ Github/FPO-site/app/css/style-b.css
 		width: 100px;
 	}
 	.sort-label { 
+	
 		margin-left: 0px;
 	}
 	#social-nav {
@@ -189,15 +190,7 @@ Github/FPO-site/app/css/style-b.css
 
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background:#000000;
-  background-size: 369px;
-  overflow: hidden;
 
-}
 
 @media (min-width: 398px, max-width: 1400px) {
 	.sign-up {
@@ -206,5 +199,68 @@ Github/FPO-site/app/css/style-b.css
 		float: left;
 	}
 	
+}
+
+/*
+#active-color {
+	background: #FF0000;
+} */
+
+a.pagination :active {background: red;}
+
+.pagination {
+	margin-left: 220px;
+}
+
+.footer-L {
+	background: #000;
+	background-size: 374px;
+	/*width: 911px;*/
+	width: 100%;
+	height: 374px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-left: -15px;
+	color: #FFF;
+	padding-top: 84px;
+	padding-left: 239px;
+
+}
+
+.footer-R {
+	background: #312f2f;
+	background-size: 374px;
+/*	width: 369px; */
+	width: 100%;
+
+	height: 374px;
+	margin-bottom: 0px;
+	margin-top: -374px;
+	margin-left: 911px;
+	padding-top: 84px;
+	padding-left: 46px;
+}
+
+.footer {
+
+}
+
+
+.pagination.custom > li > a, 
+.pagination.custom > li > span {
+    background: none;
+    border: none;
+    color: #959595;
+}
+.pagination.custom > li > a:hover, 
+.pagination.custom > li > a:focus, 
+.pagination.custom > li > span:hover,
+.pagination.custom > li > span:focus,
+.pagination.custom > li.active > a,
+.pagination.custom > li.active > span {
+    background: none;
+    border: none;
+    color: #FF0000;
+    font-weight: bold;
 }
 
