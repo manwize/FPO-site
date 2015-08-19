@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="social-share-kit-1.0.6/dist/css/social-share-kit.css">
-		<link rel="stylesheet" type="text/css" href="css/style-b.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<div class="navbar navbar-inverse topBar">
@@ -20,9 +20,9 @@
 			</div>		
 			<div class="collapse navbar-collapse"> 
 				<form class="navbar-form navbar-right"> 
-					<ul class="nav navbar-nav">
-					  <li><a href="#"><img class="c-icon" src="img/contact-icon.png" alt="contact-icon.png"> Contact Us</a></li>
-					  <li><a href="#"><img class="c-icon online" src="img/bill-pay-icon.png" alt="bill-pay-icon.png">Online Bill Pay</a></li>
+					<ul class="nav navbar-nav" id="nav-margin">
+					  <li><a href="#"><img class="c-icon" src="img/contact-icon.png" alt="contact-icon.png"> <span class="contact-text">Contact Us</span></a></li>
+					  <li><a href="#"><img class="c-icon online" src="img/bill-pay-icon.png" alt="bill-pay-icon.png"><span class="bill-pay-text">Online Bill Pay</span></a></li>
 					</ul>
 					<div id="searchBar" class="input-group" style="margin-top: 7px;">
 						<input type="text" class="form-control col-sm-6" placeholder="Search" name="srch-term" id="srch-term">
@@ -59,9 +59,8 @@
 	        </div> <!-- /.container -->
 	    </nav> <!-- /.navbar navbar-inverse  logoBar  -->
 		<img class="splash" src="img/FPO-Splash.png" alt="FPO-Splash.png">
-		
 		<div class="content container-fluid" id="contentBlock-1">
-			<div class="col-sm-3" id="social-bar">
+			<div class="col-sm-4" id="social-bar">
 			    <nav class="navbar navbar-default" id="social-nav" role="navigation">
 			        <div class="navbar-header">
 			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -69,7 +68,7 @@
 			                <span class="icon-bar"></span>
 			                <span class="icon-bar"></span>
 			            </button>
-			        </div>
+			        </div> <!-- ./navbar-header -->
 
 			        <div class="collapse navbar-collapse">
 			        	<h3 class="left-nav-title">Quick Links</h3>
@@ -79,8 +78,7 @@
 			                <li><a href="#" class="linkReg">News</a></li>
 			                <li><a href="#" class="linkReg">Events</a></li>              
 			            </ul>
-			            <div class="panel-heading">Share This Page
-						</div>
+			            <div class="panel-heading">Share This Page</div>
 						<div class="ssk-group">
 						    <a href="#" class="ssk ssk-facebook"></a>
 						    <a href="#" class="ssk ssk-twitter"></a>
@@ -88,27 +86,29 @@
 						    <a href="#" class="ssk ssk-google-plus"></a>
 						    <a href="#" class="ssk ssk-email"></a>
 						</div>
-			        </div><!-- /.navbar-collapse -->
-			    </nav>
-			</div><!--/end Social bar - left column-->
-			<div id="selectBoxes" class="selectBoxes">
-				<!-- Single button -->
-				<span class="sort-label">Sort By</span>
+			        </div><!-- End /.navbar-collapse }} -->
+			    </nav> <!-- End .navbar navbar-default #social-nav }} -->
+			</div><!-- End Social bar - left column }} -->
+			<div id="selectBoxes" class="selectBoxes col-sm-5">
+				<!-- {} Single drop-down button 1 -->
+				<span class="sort-label">Filter By</span>
 				<div class="btn-group" id="dropdown-1">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    Type <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li role="separator" class="divider"></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-				<!-- Single button -->
+					<button type="button" class="btn btn-default dropdown-toggle" 
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Type <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div> <!-- END drop-down button 1 }} -->
+				<!-- {} Single drop-down button 2 -->
 				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <button type="button" class="btn btn-default dropdown-toggle" 
+				  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    Topic <span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu">
@@ -118,82 +118,79 @@
 				    <li role="separator" class="divider"></li>
 				    <li><a href="#">Separated link</a></li>
 				  </ul>
-				</div>
-				<!-- Single button -->
+				</div> <!-- END drop-down button 2 }} -->
+				<!-- {} Single drop-down button 3 -->
 				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    Author <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu">
-				    <li><a href="#">Action</a></li>
-				    <li><a href="#">Another action</a></li>
-				    <li><a href="#">Something else here</a></li>
-				    <li role="separator" class="divider"></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
-				</div>
-			</div>
+					<button type="button" class="btn btn-default dropdown-toggle" 
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Author <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div> <!-- END drop-down button 3 }} -->
+			</div> <!-- END drop-downs #selectBoxes }} -->
 			<div class="line-grids">
-
-				<div class="content container-fluid" id="grid-1">
-				  	<div class="row">
-					    <div class="pull-right">
-					      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" id="pic-1" alt="lady.jpg">
-
-						    <article class="col-sm-7 text-P" id="text-1">
-						    	<p>
-						    		<span class="title">Title: </span> 
-						    		<em>Ham hock  in ball tip occaecat et, short</em> <br/>
-						      		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-						      	</p>
-						    </article>
-					    </div>
+				<div class="row " id="grid-1">
+				    <div class="featured">
+				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" id="pic-1" alt="lady.jpg">
+					    <article class="col-sm-7 text-P" id="text-1">
+					    	<p>
+					    		<span class="title">Title: </span>
+					    		<em>Ham hock  in ball tip occaecat et, short</em> <br/>
+					      		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					      	</p>
+					    </article>
 				    </div>
-			  </div> <!-- grid-1 -->
+			  	</div> <!-- grid-1 -->
+			  	<div class="inner-grids" id="inner-grids">
+					<div class="container-fluid grid-2" >
+						<div class="row pull-right" id="grid-2">
+					      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+						    <article class="col-md-6 text-P" id="text-2">
+				      			<p>
+				      				<span class="title">Title: </span>
+				      				<em> Do qui mollit beef ribs quis tail beef e</em><br/>
+				      				Quis consequat cupim jowl chicken. Ham hock occaecat sunt, bacon frankfurter pastrami beef. Sed biltong duis spare ribs pork loin meatloaf filet mignon ad ham non culpa. Pork et chuck ipsum.
+			      				</p>
+		      				</article>
+				    	</div><!-- ./grid-2 -->	
+				  	</div> 	  
+					<div class="content container-fluid" id="grid-3">
+					  	<div class="row">
+						    <div class="pull-right">
+						      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+							    <article class="col-md-8 text-P" id="text-3">
+					      			<p>
+						      			<span class="title">Title: </span>
+						      			<em>Turducken nostrud ea do tri-tip anim. V</em>
+						      			<br/>
+						      			Pork loin nisi venison, biltong ullamco doner dolor anim shank corned beef. Tail minim eu sunt, exercitation swine reprehenderit ut quis tenderloin meatloaf elit. Occaecat t-bone ut laborum, pastrami enim do hamburger ex eiusmod incididunt turkey est. Ut turducken doner bacon tenderloin, qui aute landjaeger pastrami.
+				      				</p>
+			      				</article>
+					    	</div>
+				    	</div>
+			    	</div> <!-- ./grid-3 -->	  
+					<div class="content container-fluid" id="grid-4">
+					  	<div class="row">
+						    <div class="pull-right">
+						      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
+							    <article class="col-md-9 text-P" id="text-4">
+					      			<p><span class="title">Title:</span> <em>Incididunt exercitation deserunt pig sir</em>
+					      				<br/>Labore shank leberkas brisket, mollit ullamco in aliqua bacon pork swine ham hock consequat nostrud bresaola. Ut meatloaf culpa esse prosciutto ut shankle. Turducken cupidatat t-bone, pancetta hamburger quis ribeye tempor. Aute esse landjaeger sunt, hamburger sint drumstick ea pork filet mignon.
+				      				</p>
+			      				</article>
+					    	</div>
+				    	</div> <!-- row 4 -->
+				  	</div> <!-- ./grid-4 -->
+			  	</div>
+			</div> <!-- ./line-grids -->
 
-			<div class="content container-fluid" id="grid-2">
-				<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-					    <article class="col-md-6 text-P" id="text-2">
-			      			<p>
-			      				<span class="title">Title: </span>
-			      				<em> Do qui mollit beef ribs quis tail beef e</em><br/>
-			      				Quis consequat cupim jowl chicken. Ham hock occaecat sunt, bacon frankfurter pastrami beef. Sed biltong duis spare ribs pork loin meatloaf filet mignon ad ham non culpa. Pork et chuck ipsum.
-		      				</p>
-	      				</article>
-			    	</div>
-		    	</div>
-		  	</div> <!-- grid-2 -->		  
-			<div class="content container-fluid" id="grid-3">
-			  	<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-					    <article class="col-md-8 text-P" id="text-3">
-			      			<p>
-				      			<span class="title">Title: </span>
-				      			<em>Turducken nostrud ea do tri-tip anim. V</em>
-				      			<br/>
-				      			Pork loin nisi venison, biltong ullamco doner dolor anim shank corned beef. Tail minim eu sunt, exercitation swine reprehenderit ut quis tenderloin meatloaf elit. Occaecat t-bone ut laborum, pastrami enim do hamburger ex eiusmod incididunt turkey est. Ut turducken doner bacon tenderloin, qui aute landjaeger pastrami.
-		      				</p>
-	      				</article>
-			    	</div>
-		    	</div>
-	    	</div> <!-- grid-3 -->	  
-			<div class="content container-fluid" id="grid-4">
-			  	<div class="row">
-				    <div class="pull-right">
-				      	<img class="article-pic col-md-2" src="http://lorempixel.com/400/200/" alt="lady.jpg">
-					    <article class="col-md-9 text-P" id="text-4">
-			      			<p><span class="title">Title:</span> <em>Incididunt exercitation deserunt pig sir</em>
-			      				<br/>Labore shank leberkas brisket, mollit ullamco in aliqua bacon pork swine ham hock consequat nostrud bresaola. Ut meatloaf culpa esse prosciutto ut shankle. Turducken cupidatat t-bone, pancetta hamburger quis ribeye tempor. Aute esse landjaeger sunt, hamburger sint drumstick ea pork filet mignon.
-		      				</p>
-	      				</article>
-			    	</div>
-		    	</div> <!-- row 4 -->
-		  	</div> <!-- grid-4 -->
-		</div> <!-- line-grids -->
-		<div class="container sign-up pull-right">
+			<div class="container sign-up pull-right">
 		    <div class="row" id="sign-up-row">
 		    	<div class="col-md-4 col-md-offset-7">
 		    		<div class="panel panel-default">
@@ -218,68 +215,65 @@
 					    	    	<label>
 					    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
 					    	    	</label>
-					    	    </div>
+					    	    </div>  <!--  END  ./checkbox }} -->
 					    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Submit">
-					    	</fieldset>
-					      	</form>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" id="pages">
-			<ul class="pagination custom">
-              <li class="disabled"><a href="#">«</a></li>
-              <li><a  href="#" id="active-color" class="warning">1 <span class="sr-only"></span></a></li>
-              <li><a href="#" class="page">2</a></li>
-              <li><a href="#" class="page">3</a></li>
-              <li><a href="#" class="page">4</a></li>
-              <li><a href="#" class="page">5</a></li>
-              <li><a href="#" class="page">...</a></li>
-              <li><a href="#" class="page">100</a></li>
-              <li><a href="#" class="page">»</a></li>
-            </ul>
-		</div>
-
-		<footer class="footer">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-			</div>	
-			<div class="footer-L">
-				<p>CORPORATE HEADQUARTERS</p><br/>
-				<p>TEST ENTERPRISES 1341 Test Avenue <br>
-				Cranston, Rode Island 02910<br>
-				401.467.6454
-
-				</p>
-			</div>
-			<div class="footer-R">
-				<ul class="nav c-nav">
-					  <li><a href="#"><img class="c-icon" src="img/contact-icon.png" alt="contact-icon.png"> Contact Us</a></li>
-					  <li><a href="#"><img class="c-icon online" src="img/bill-pay-icon.png" alt="bill-pay-icon.png">Online Bill Pay</a></li>
-				</ul>
-				<div class="ssk-group">
-				    <a href="#" class="ssk ssk-facebook"></a>
-				    <a href="#" class="ssk ssk-twitter"></a>
-				    <a href="#" class="ssk ssk-linkedin"></a>
-				    <a href="#" class="ssk ssk-youtube"></a>
-				    <a href="#" class="ssk ssk-skype"></a>
-				</div>
-			</div>
-		</footer>
-
-
-
-	
+					    	</fieldset>  <!--  END  fieldset }} -->
+					      	</form>  <!--  END  form }} -->
+					    </div>  <!--  END ./panel-body }} -->
+					</div>  <!--  END ./panel panel-default }} -->
+				</div>  <!--  END  ./col-md-4 col-md-offset-7 }} -->
+			</div>  <!--  END  ./row  #/sign-up-row }} -->
+		</div>  <!--  END  ./sign up box }} -->
+			<div class="" id="pages">
+				<ul class="pagination custom">
+					<li class="disabled"><a href="#">«</a></li>
+					<li><a  href="#" id="active-color" class="warning">1 
+						<span class="sr-only"></span></a></li>
+					<li><a href="#" class="page">2</a></li>
+					<li><a href="#" class="page">3</a></li>
+					<li><a href="#" class="page">4</a></li>
+					<li><a href="#" class="page">5</a></li>
+					<li><a href="#" class="page">...</a></li>
+					<li><a href="#" class="page">100</a></li>
+					<li><a href="#" class="page">»</a></li>
+	            </ul> <!--  END  ./pagination  ./custom }} -->
+			</div> <!--  END  ./container  #/pages }} -->
+			<footer class="container-fluid" style="padding: 0px;">
+				<div class="row">
+				    <div id="footer-L1" class="col-md-4 col-sm-12">
+						<p id="text-left" class="footer-text-1">CORPORATE HEADQUARTERS
+						<br/>
+						<br/>
+						TEST ENTERPRISES 1341 Test Avenue <br>
+						Cranston, Rode Island 02910<br>
+						401.467.6454
+						</p>
+				    </div>
+				    <div id="footer-L2" class="col-md-4 col-sm-12">
+				      <p id="copyright" class="footer-text-1">©2015 TEST ENTERPRISES<br>
+				      <br>
+					      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+					</p>
+				    </div>
+				    <div id="footer-R" class="col-md-4 col-sm-12">
+				      	<ul class="c-nav">
+							<li class="footer-link">
+								<a href="#" ><img class="c-icon" src="img/contact-icon.png" alt="contact-icon.png"><span class="footer-link">Contact Us</span></a></li>
+							<li class="footer-link">
+								<a href="#"><img class="c-icon" src="img/bill-pay-icon.png" alt="bill-pay-icon.png"><span class="footer-link">Online Bill Pay</span></a></li>
+						</ul>
+						<div class="ssk-group" id="ssk-group-2">
+						    <a href="#" class="ssk ssk-facebook"></a>
+						    <a href="#" class="ssk ssk-twitter"></a>
+						    <a href="#" class="ssk ssk-linkedin"></a>
+						    <a href="#" class="ssk ssk-youtube"></a>
+						    <a href="#" class="ssk ssk-skype"></a>
+						</div>
+				    </div>
+			  	</div>				
+			</footer>
+		</div> <!-- END ./content container-fluid #/contentBlock-1" }} -->
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
-		<!--<script type="text/javascript" src="script/main2.js"></script>-->
-
 	</body>
 </html>
